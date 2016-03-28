@@ -7,7 +7,7 @@ Code for [Python Parallel Programming Cookbook][1] by Giancarlo Zaccone
 ## Progress
 
  - [x] Chapter 1: Getting Started with Parallel Computing and Python
- - [ ] Chapter 2: Thread-based Parallelism
+ - [x] Chapter 2: Thread-based Parallelism
  - [ ] Chapter 3: Process-base Parallelism
  - [ ] Chapter 4: Asynchronous Programming
  - [ ] Chapter 5: Distributed Python
