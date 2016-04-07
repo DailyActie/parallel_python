@@ -1,3 +1,5 @@
+[![Requirements Status](https://requires.io/github/lancelote/parallel_python/requirements.svg?branch=master)](https://requires.io/github/lancelote/parallel_python/requirements/?branch=master)
+
 # parallel_python
 
 Code for [Python Parallel Programming Cookbook][1] by Giancarlo Zaccone
@@ -12,3 +14,7 @@ Code for [Python Parallel Programming Cookbook][1] by Giancarlo Zaccone
  - [ ] Chapter 4: Asynchronous Programming
  - [ ] Chapter 5: Distributed Python
  - [ ] Chapter 6: GPU programming with Python
+
+## Requirements
+
+ - `mpi4py` package requires `apt-get install libcr-dev mpich2`
