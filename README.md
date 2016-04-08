@@ -18,3 +18,10 @@ Code for [Python Parallel Programming Cookbook][1] by Giancarlo Zaccone
 ## Requirements
 
  - `mpi4py` package requires `apt-get install libcr-dev mpich2`
+
+## MPI
+
+Exaple usage:
+```bash
+mpiexec -n 9 python point_to_point_communication.py
+```
