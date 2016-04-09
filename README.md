@@ -17,7 +17,8 @@ Code for [Python Parallel Programming Cookbook][1] by Giancarlo Zaccone
 
 ## Requirements
 
- - `mpi4py` package requires `apt-get install libcr-dev mpich2`
+ - `mpi4py` package requires `sudo apt-get install libcr-dev mpich2`
+ - `mpich2` requires `python-dev` or `python3-dev` if you use Python 3+
 
 ## MPI
 
