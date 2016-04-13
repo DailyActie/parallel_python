@@ -23,3 +23,5 @@ Examples:
    one and many processes (send different data to multiple processes)
  - [Gather communication](chapter3/mpi4py_communication_gather) between many
    and one (send data from many processes to one)
+ - [Alltoall collective communication](chapter3/mpi4py_communication_alltoall)
+   between all processes
