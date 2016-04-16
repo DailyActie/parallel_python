@@ -29,7 +29,8 @@ Examples:
 
 ## Asynchronous Programming
 
- - [Concurrent Futures Pooling][11]
+ - [Concurrent Futures Pooling][11] - easy way to obtain pool of threads or
+   processes
 
   [1]: README.md#requirements
   [2]: chapter3/mpi4py_basic_usage.py
