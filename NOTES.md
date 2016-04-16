@@ -27,6 +27,10 @@ Examples:
    and one (plus reduce on the result)
  - [Communication optimisation][10] and virtual topology
 
+## Asynchronous Programming
+
+ - [Concurrent Futures Pooling][11]
+
   [1]: README.md#requirements
   [2]: chapter3/mpi4py_basic_usage.py
   [3]: chapter3/mpi4py_avoiding_deadlock.py
@@ -37,3 +41,4 @@ Examples:
   [8]: chapter3/mpi4py_communication_alltoall.py
   [9]: chapter3/mpi4py_communication_reduce.py
   [10]: chapter3/mpi4py_communication_optimisation.py
+  [11]: chapter4/concurrent_futures_pooling.py
