@@ -32,6 +32,7 @@ Examples:
  - [Concurrent Futures Pooling][11] - easy way to obtain pool of threads or
    processes
  - [Asyncio basics][12] - asynchronous programming with asyncio
+ - [Asyncio coroutines][13] - coroutines using in asyncio
 
   [1]: README.md#requirements
   [2]: chapter3/mpi4py_basic_usage.py
@@ -45,3 +46,4 @@ Examples:
   [10]: chapter3/mpi4py_communication_optimisation.py
   [11]: chapter4/concurrent_futures_pooling.py
   [12]: chapter4/asyncio_basics.py
+  [13]: chapter4/asyncio_coroutine.py
