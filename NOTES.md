@@ -34,6 +34,7 @@ Examples:
  - [Asyncio basics][12] - asynchronous programming with asyncio
  - [Asyncio coroutines][13] - coroutines using in asyncio
  - [Asyncio task manipulation][14] - parallel tasks
+ - [Asyncio and Futures][15] - using futures with asyncio
 
   [1]: README.md#requirements
   [2]: chapter3/mpi4py_basic_usage.py
@@ -49,3 +50,4 @@ Examples:
   [12]: chapter4/asyncio_basics.py
   [13]: chapter4/asyncio_coroutine.py
   [14]: chapter4/asyncio_task_manipulation.py
+  [15]: chapter4/asyncio_and_futures.py
