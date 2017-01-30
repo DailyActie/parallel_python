@@ -1,20 +1,23 @@
-# coding=utf-8
-
+import logging
 from threading import Thread
 from time import sleep
 
+logging.basicConfig(level=logging.INFO)
+logger_thread = logging.getLogger('__thrd__')
+logger_main = logging.getLogger(__name__)
 
-class CookBook(Thread):
+
+class ParallelPython(Thread):
 
     def __init__(self):
         Thread.__init__(self)
-        self.message = 'Hello Parallel Python Cookbook!\n'
+        self.message = 'Hello Parallel Python!'
 
     def print_message(self):
         print(self.message)
 
     def run(self):
-        print('Thread Starting...\n')
+        logger_thread.info('Thread Starting')
 
         x = 0
         while x < 10:
@@ -22,12 +25,11 @@ class CookBook(Thread):
             self.print_message()
             x += 1
 
-        print('Thread Ended\n')
+        logger_thread.info('Thread Ended')
 
-# Start the main process
-print('Process Started\n')
+logger_main.info('Process Started')
 
-hello_python = CookBook()
+hello_python = ParallelPython()
 hello_python.start()
 
-print('Process Ended\n')
+logger_main.info('Process Ended')
