@@ -4,26 +4,29 @@
 
 import threading
 import time
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 
 def first_function():
-    print(threading.currentThread().getName() + str(' is starting...\n'))
+    logging.info(threading.currentThread().getName() + str(' is starting...'))
     time.sleep(2)
-    print(threading.currentThread().getName() + str(' is Exiting... \n'))
+    logging.info(threading.currentThread().getName() + str(' is exiting...'))
     return
 
 
 def second_function():
-    print(threading.currentThread().getName() + str(' is starting...\n'))
+    logging.info(threading.currentThread().getName() + str(' is starting...'))
     time.sleep(2)
-    print(threading.currentThread().getName() + str(' is Exiting... \n'))
+    logging.info(threading.currentThread().getName() + str(' is exiting...'))
     return
 
 
 def third_function():
-    print(threading.currentThread().getName() + str(' is starting...\n'))
+    logging.info(threading.currentThread().getName() + str(' is starting...'))
     time.sleep(2)
-    print(threading.currentThread().getName() + str(' is Exiting... \n'))
+    logging.info(threading.currentThread().getName() + str(' is exiting...'))
     return
 
 if __name__ == '__main__':
@@ -34,3 +37,5 @@ if __name__ == '__main__':
     t1.start()
     t2.start()
     t3.start()
+
+    logging.debug('Pause')

@@ -1,8 +1,13 @@
 import multiprocessing
+from time import sleep
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 
 def foo(i):
-    print('Called function in process: %s' % i)
+    sleep(3)
+    logging.info('Called function in process: %s' % i)
     return
 
 if __name__ == '__main__':

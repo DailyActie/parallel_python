@@ -27,9 +27,9 @@ class ParallelPython(Thread):
 
         logger_thread.info('Thread Ended')
 
-logger_main.info('Process Started')
 
-hello_python = ParallelPython()
-hello_python.start()
-
-logger_main.info('Process Ended')
+if __name__ == '__main__':
+    logger_main.info('Process Started')
+    hello_python = ParallelPython()
+    hello_python.start()
+    logger_main.info('Process Ended')

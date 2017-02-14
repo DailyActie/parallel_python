@@ -20,7 +20,7 @@ class Consumer(Thread):
             time.sleep(2)
             self.event.wait()
             item = self.items.pop()
-            print('Consumer notify : %d popped from list by %s\n' % (
+            print('Consumer notify : %d popped from list by %s' % (
                 item, self.name
             ))
 
@@ -37,12 +37,12 @@ class Producer(Thread):
             time.sleep(2)
             item = random.randint(0, 256)
             self.items.append(item)
-            print('Producer notify : item № %d appended to list by %s' % (
+            print('Producer notify : item # %d appended to list by %s' % (
                 item, self.name
             ))
             print('Producer notify : event set by %s' % self.name)
             self.event.set()
-            print('Producer notify : event cleared by %s\n' % self.name)
+            print('Producer notify : event cleared by %s' % self.name)
             self.event.clear()
 
 if __name__ == '__main__':
